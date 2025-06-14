@@ -1,0 +1,52 @@
+.ogashin
+{
+    border: solid 5px rgb(0, 0, 0) ;
+}
+
+body{
+    height:100vn;
+    justify-items:center;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+.title3{
+    height: 80px;;
+}
+
+.contact-form{
+    border: 1.5px solid #aaa;
+    width: 390px;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 20px;
+
+    font-weight:bold;
+}
+
+.item{
+    text-align: center;
+}
+
+
+.label{
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.button-area{
+    text-align: center;
+}
+
+.inputs{
+    height: 25px;
+}
+
+.inputs2{
+    width: 300px;
+    height: 160px;
+}

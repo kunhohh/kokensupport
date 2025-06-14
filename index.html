@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後見人サポートサービス</title>
+    <link rel="stylesheet" href="ogashinnogakubuchi.css">
+    <style>
+        .pc-only { display: block; }
+        .sp-only { display: none; }
+        @media screen and (max-width: 767px) {
+            .pc-only { display: none; }
+            .sp-only { display: block; }
+        }
+        .center-pc, .center-sp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .title-center {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        .image-list-pc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px 32px;
+            margin: 32px 0;
+            width: 100%;
+            max-width: 900px;
+        }
+        .image-list-pc img {
+            width: 400px;
+            max-width: 45vw;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #fff;
+        }
+        .image-list-sp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            margin: 32px 0;
+            width: 100%;
+        }
+        .image-list-sp img {
+            width: 98vw;
+            max-width: 98vw;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #fff;
+        }
+        .contact-form.center-pc, .contact-form.center-sp {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .simulator-center {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- PC版 -->
+    <div class="pc-only">
+        <h1 class="title5 title-center" style="background-color:rgb(28, 83, 187);">
+            <span style="color:white;">後見人サポートサービス<br>電磁的認知機能低下者保護制度</span>
+        </h1>
+        <div>
+            <h3>早稲田大学高等学院</h3>
+            <img src="shs_logo.webp" alt="早稲田大学高等学院" style="height:100px;">
+            <br><br>こんにちは。<span style="color:red;">UNIGAKU</span>です！
+            <br>私たちは認知症の人々を救う新しい後見人制度である「電磁的認知機能低下者保護制度」を構想し、後見人サポートサービスとして発表します！
+            <br>従来の成年後見制度の詳細は<a href="https://guardianship.mhlw.go.jp/">こちらへ</a>
+            <div class="image-list-pc">
+                <img src="image1.png" alt="image1">
+                <img src="image2.png" alt="image2">
+                <img src="image3.png" alt="image3">
+                <img src="image4.png" alt="image4">
+                <img src="image5.png" alt="image5">
+                <img src="image6.png" alt="image6">
+                <img src="image7.png" alt="image7">
+                <img src="image8.png" alt="image8">
+                <img src="image9.png" alt="image9">
+                <img src="image10.png" alt="image10">
+                <img src="image11.png" alt="image11">
+                <img src="image12.png" alt="image12">
+                <img src="image13.png" alt="image13">
+                <img src="image14.png" alt="image14">
+            </div>
+        </div>
+        <div class="center-pc">
+            <div class="contact-form center-pc">
+                <p class="title2">後見人の登録要件を入力してください</p>
+                <form action="submit.php" method="POST">
+                    <div class="item">
+                        <label class="label">お名前</label>
+                        <br><input type="text" class="inputs" name="name" required>
+                    </div>
+                    <div class="item">
+                        <br><label class="label">メールアドレス</label>
+                        <br><input type="email" class="inputs" name="email" required>
+                    </div>
+                    <div class="item">
+                        <br><label class="label">ご質問</label>
+                        <br><textarea class="inputs2" name="question" placeholder="ご質問はこちら"></textarea>
+                    </div>
+                    <div class="button-area">
+                        <br><input type="submit" value="送信">
+                        <input type="reset" value="リセット"><br><br>
+                    </div>
+                </form>
+            </div>
+            <div class="simulator-center">
+                <p>
+                    お買い物シミュレーターはこちらです。<br>
+                    <a href="https://kunhohh.github.io/shopping/">https://kunhohh.github.io/shopping/</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- スマホ版 -->
+    <div class="sp-only">
+        <h1 class="title5 title-center" style="background-color:rgb(28, 83, 187); font-size:1.3em;">
+            <span style="color:white;">後見人サポートサービス<br>電磁的認知機能低下者保護制度</span>
+        </h1>
+        <div class="center-sp">
+            <div>
+                <h3 style="font-size:1em;">早稲田大学高等学院</h3>
+                <img src="shs_logo.webp" alt="早稲田大学高等学院" style="height:60px;">
+                <br><br>こんにちは。<span style="color:red;">UNIGAKU</span>です！
+                <br>私たちは認知症の人々を救う新しい後見人制度である<br>「電磁的認知機能低下者保護制度」を構想し、<br>後見人サポートサービスとして発表します！
+                <br>従来の成年後見制度の詳細は<a href="https://guardianship.mhlw.go.jp/">こちらへ</a>
+                <div class="image-list-sp">
+                    <img src="image1.png" alt="image1">
+                    <img src="image2.png" alt="image2">
+                    <img src="image3.png" alt="image3">
+                    <img src="image4.png" alt="image4">
+                    <img src="image5.png" alt="image5">
+                    <img src="image6.png" alt="image6">
+                    <img src="image7.png" alt="image7">
+                    <img src="image8.png" alt="image8">
+                    <img src="image9.png" alt="image9">
+                    <img src="image10.png" alt="image10">
+                    <img src="image11.png" alt="image11">
+                    <img src="image12.png" alt="image12">
+                    <img src="image13.png" alt="image13">
+                    <img src="image14.png" alt="image14">
+                </div>
+            </div>
+            <div class="contact-form center-sp">
+                <p class="title2" style="font-size:1em;">後見人の登録要件を入力してください</p>
+                <form action="submit.php" method="POST">
+                    <div class="item">
+                        <label class="label">お名前</label>
+                        <br><input type="text" class="inputs" name="name" required>
+                    </div>
+                    <div class="item">
+                        <br><label class="label">メールアドレス</label>
+                        <br><input type="email" class="inputs" name="email" required>
+                    </div>
+                    <div class="item">
+                        <br><label class="label">ご質問</label>
+                        <br><textarea class="inputs2" name="question" placeholder="ご質問はこちら"></textarea>
+                    </div>
+                    <div class="button-area">
+                        <br><input type="submit" value="送信">
+                        <input type="reset" value="リセット"><br><br>
+                    </div>
+                </form>
+            </div>
+            <div class="simulator-center">
+                <p>
+                    お買い物シミュレーターはこちらです。<br>
+                    <a href="https://kunhohh.github.io/shopping/">https://kunhohh.github.io/shopping/</a>
+                </p>
+            </div>
+        </div>
+    </div>
